@@ -273,6 +273,10 @@ header {
     position: relative;
 }
 
+.hidden {
+    display: none;
+}
+
 nav {
     margin: 0;
 }
@@ -306,11 +310,11 @@ nav a {
     font-size: 90px;
     line-height: 94.3px;
     font-family: "Petit Formal Script";
-    width: 50%;
+    width: 100%;
 }
 
 .headerFlex img {
-    width: 45%;
+    width: 80%;
     margin-bottom: 50px;
 }
 
@@ -567,17 +571,28 @@ footer {
         justify-content: center;
     }
 
+    .hidden {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 2.5%;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #hamburger input:checked {
+        
+
+    }
+
     header nav {
         display: none;
     }
 
     .headerFlex {
         flex-direction: column;
-    }
-
-    h1 {
-
-        text-align: right;
     }
 
     .socialList {
