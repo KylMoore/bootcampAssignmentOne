@@ -277,6 +277,10 @@ header {
     display: none;
 }
 
+.hiddenMenu {
+    visibility: hidden;
+}
+
 nav {
     margin: 0;
 }
