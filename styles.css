@@ -278,8 +278,33 @@ header {
 }
 
 .hiddenMenu {
-    visibility: hidden;
+    z-index: 9;
+    position: absolute;
+    right: -300px;
+    top: 5%;
+    list-style: none;
+    background-color: #500801;
+    padding: 2.5%;
+    margin: 0;
+    transition: 1s;
 }
+
+.hiddenMenu li {
+    padding: 10%;
+    margin: 0;
+}
+
+.hiddenMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.hiddenMenu.active {
+    z-index: 9999999;
+    right: 0;
+    width: 100px;
+}
+
 
 nav {
     margin: 0;

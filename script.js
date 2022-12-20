@@ -9,27 +9,30 @@
 const slideOutMenu = document.querySelector(".hidden");
 // const showMenuItems = function(){};
 
-
+const ulElement = document.querySelector(".hiddenMenu");
 
 
 
 slideOutMenu.addEventListener("click", function (e) {
     const clickedHamburger = document.querySelector("#hamburger");
 
-    if (clickedHamburger.checked === true) {
+    ulElement.classList.toggle("active");
+    // ulElement.classList.toggle();
 
-        const ulElement = document.querySelector(".hiddenMenu");
-        // const listElement = document.querySelector(".menuItem");
+    // if (clickedHamburger.checked === true) {
+
+        
+    //     // const listElement = document.querySelector(".menuItem");
+
+    //     // console.log(e)
+
+    //     ulElement.classList.toggle(".hiddenMenu")
+
+    //     // ulElement.createElement(listElement);
 
 
-        // ulElement.display = "block";
-
-        // ulElement.createElement(listElement);
-
-        // console.log(ulElement);
-
-        updateSlideOutMenu();
-    }
+    //     updateSlideOutMenu();
+    // }
 });
 
 
